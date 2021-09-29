@@ -1,5 +1,6 @@
 import React from 'react';
 import { MdDesktopMac, MdCode, MdPhonelinkSetup } from 'react-icons/md';
+import { IoServerSharp } from 'react-icons/io5';
 import styled from 'styled-components';
 import SectionTitle from './SectionTitle';
 import ServicesSectionItem from './ServicesSectionItem';
@@ -27,12 +28,17 @@ export default function ServicesSection() {
   return (
     <ServicesItemsStyles>
       <div className="container">
-        <SectionTitle subheading="What i will do for you" heading="Services" />
+        <SectionTitle subheading="My" heading="AREAS OF INTEREST" />
         <div className="services__allItems">
           <ServicesSectionItem
-            icon={<MdDesktopMac />}
-            title="web design"
-            desc="I do ui/ux design for the website that helps website to get a unique look."
+            icon={
+              <div>
+                <MdDesktopMac />
+                <IoServerSharp />
+              </div>
+            }
+            title="full stack development"
+            desc="I develop both front-end and back-end of an application utilizing appropriate framework."
           />
           <ServicesSectionItem
             icon={<MdCode />}
@@ -42,7 +48,7 @@ export default function ServicesSection() {
           <ServicesSectionItem
             icon={<MdPhonelinkSetup />}
             title="app Dev"
-            desc="I develop mobile application. I create mobile app with eye catching ui. "
+            desc="I develop mobile application. I create mobile app with more emphasis on UI"
           />
         </div>
       </div>

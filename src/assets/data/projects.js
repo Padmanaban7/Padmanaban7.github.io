@@ -1,45 +1,53 @@
 import { v4 as uuidv4 } from 'uuid';
-import ProjectImg from '../images/projectImg.png';
-import UTrackerImg from '../images/utracker.jpg';
-import GreenCtgImg from '../images/greenctg.jpg';
-import CoinTrackerImg from '../images/cointracker.jpg';
-import CavinImg from '../images/cavinimg.jpg';
+import AutocompleteImage from '../images/autocomplete.png';
+import IotWaterValve from '../images/iot-water.png';
+import ExpenseManager from '../images/expense-manager.jpg';
+import DashboardImage from '../images/DashboardFinal.png';
+import MovieRecommendation from '../images/Movie-Recommendation.jpg';
+import CPSearchEngine from '../images/cp-search.png';
 
 const projects = [
   {
     id: uuidv4(),
-    name: 'U Tracker',
+    name: 'Expense manager',
     desc:
-      'An application to track your all data from one place. I developed the website and the mobile app',
-    img: UTrackerImg,
+      'An mobile app that helps the user to track and visualize the expenses incurred. It also allows user to create group expenses',
+    img: ExpenseManager,
   },
   {
     id: uuidv4(),
-    name: 'Green CTG',
+    name: 'CP Search engine',
     desc:
-      'An app to help people to get an overview of how they can make the city beautiful.',
-    img: GreenCtgImg,
+      'A search engine for retreiving competitve programming problems accross various platforms such as codeforces, leetcode etc.,',
+    img: CPSearchEngine,
   },
   {
     id: uuidv4(),
-    name: 'Coin Tracker',
+    name: 'Movie recommendation system',
     desc:
-      'Using this app you can track any e coin. Also you will get a good advise about investment form the professional',
-    img: CoinTrackerImg,
+      'A web application that allows user to create a list of movies that they like and provides recommendation based on their interest',
+    img: MovieRecommendation,
   },
   {
     id: uuidv4(),
-    name: "Cavin's Portfolio",
+    name: 'Iot valve operator',
     desc:
-      'A portfolio for Cavin jr. A artist from New york city. The portfolio is made using ReactJs and GatsbyJs.',
-    img: CavinImg,
+      'An application that allows user to remotely operate the water valve. I developed the arduino and the mobile app',
+    img: IotWaterValve,
   },
   {
     id: uuidv4(),
-    name: 'Tracking Soft',
+    name: 'Claims management dashboard',
     desc:
-      'A tracking website that will show the performance of the website. Also you will get some useful advice to improve the performance.',
-    img: ProjectImg,
+      'A web application that allows insurance claim handlers to bring insurance claims to completion.',
+    img: DashboardImage,
+  },
+  {
+    id: uuidv4(),
+    name: 'Autocomplete',
+    desc:
+      'An autocomplete module written in Java for a text editor that provides suggestions to user. The dictionary is implemeted using tries to reduce the space.',
+    img: AutocompleteImage,
   },
 ];
 

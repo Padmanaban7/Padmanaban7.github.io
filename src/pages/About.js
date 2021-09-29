@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import PText from '../components/PText';
-import Button from '../components/Button';
 import AboutImg from '../assets/images/about-page-img.png';
 import AboutInfoItem from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
+import Resume from '../assets/data/Resume.pdf';
 
 const AboutPageStyles = styled.div`
   padding: 20rem 0 10rem 0;
@@ -81,29 +81,36 @@ export default function About() {
           <div className="top-section">
             <div className="left">
               <p className="about__subheading">
-                Hi, I am <span>Ayan Khan</span>
+                Hi, I am <span>Padmanaban</span>
               </p>
-              <h2 className="about__heading">A freelance Web developer</h2>
+              <h2 className="about__heading">An application developer.</h2>
               <div className="about__info">
                 <PText>
-                  I am from chittagong, Bangladesh. A place of beauty and
-                  nature. Since my childhood, i love art and design. I always
-                  try to design stuff with my unique point of view. I also love
-                  to create things that can be usefull to others.
-                  <br /> <br />
-                  I started coding since I was in high school. Coding is also an
-                  art for me. I love it and now I have the opportunity to design
-                  along with the coding. I find it really interesting and I
-                  enjoyed the process a lot.
+                  I am from Mogappair, Chennai. A city known for allowing people
+                  to become their best self. I am always intrigued about our
+                  tech world and how it works. That made me to take computer
+                  science as my high school major.
                   <br />
                   <br />
-                  My vision is to make the world a better place. Now almost
-                  everything is becoming better than ever. It is time for us to
-                  create more good stuff that helps the world to become a better
-                  place.
+                  My interest in mathematics and computer science allowed me to
+                  take M.Sc Software systems in PSG College of Technology. My
+                  passion to solve problems helped me to excel in coding. I
+                  learn from my mistakes and this allowed me to adapt to
+                  industry standard in less time.
+                  <br />
+                  <br />
+                  My motto is to concentrate on my process and try to become a
+                  better version of myself. With the help of people around me I
+                  can acheive what I aim for.
                 </PText>
               </div>
-              <Button btnText="Download CV" btnLink="#" />
+              <p className="about__subheading">
+                <span>
+                  <a href={Resume} download="Resume">
+                    Download CV
+                  </a>
+                </span>
+              </p>
             </div>
             <div className="right">
               <img src={AboutImg} alt="me" />
@@ -115,47 +122,35 @@ export default function About() {
 
               <AboutInfoItem
                 title="School"
-                items={['Nasirabad Govt. High School, Chattogram']}
+                items={['Velammal Matriculation School, Chennai']}
               />
               <AboutInfoItem
                 title="Collage"
-                items={['BAF Shaheen College Chattogram']}
-              />
-              <AboutInfoItem
-                title="Varsity"
-                items={['University Of Chitiagong']}
+                items={['PSG College of Technology, Coimbatore']}
               />
             </div>
             <div className="about__info__item">
               <h1 className="about__info__heading">My Skills</h1>
 
               <AboutInfoItem
-                title="FrontEnd"
-                items={['HTML', 'CSS', 'JavaScript', 'REACT']}
+                title="Languages"
+                items={['Java', 'C++', 'JavaScript', 'Python', 'C']}
               />
               <AboutInfoItem
                 title="BackEnd"
-                items={['Node', 'Express', 'PHP']}
+                items={['Node', 'Express', 'SQL']}
               />
               <AboutInfoItem
-                title="Design"
-                items={['Photoshop', 'After Effects', 'Figma']}
+                title="Frameworks"
+                items={['Angular', 'REACT', 'Spring', 'Django']}
               />
             </div>
             <div className="about__info__item">
               <h1 className="about__info__heading">Experiences</h1>
 
               <AboutInfoItem
-                title="2010-2012"
-                items={['junior developer at web Cifar']}
-              />
-              <AboutInfoItem
-                title="2012-2016"
-                items={['Front end developer at web Cifar ']}
-              />
-              <AboutInfoItem
-                title="2016-"
-                items={['Freelance web Developer']}
+                title="2020"
+                items={['6 months Internship at Thoughtworks']}
               />
             </div>
           </div>

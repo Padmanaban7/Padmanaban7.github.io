@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import Button from './Button';
 import PText from './PText';
 import SectionTitle from './SectionTitle';
-import AboutImg from '../assets/images/about-sec-img.png';
 
 const AboutSectionStyles = styled.div`
   padding: 10rem 0;
@@ -80,9 +79,8 @@ export default function AboutSection() {
             heading="About Me"
           />
           <PText>
-            I am a freelance website designer and developer from Chittagong,
-            Bangladesh. I create professional websites. I love art and always
-            try to show unique views to the audience through my design.
+            I am a software engineer and application developer from Chennai. I
+            create website and mobile applications.
           </PText>
           <div className="aboutSection__buttons">
             <Button btnText="Works" btnLink="/projects" />
@@ -90,7 +88,10 @@ export default function AboutSection() {
           </div>
         </div>
         <div className="aboutSection__right">
-          <img className="aboutImg" src={AboutImg} alt="Img" />
+          <SectionTitle
+            heading="FOCUS ON YOUR PROCESS"
+            subheading="My motto to acheive success"
+          />
         </div>
       </div>
     </AboutSectionStyles>

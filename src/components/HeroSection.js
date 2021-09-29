@@ -154,16 +154,15 @@ export default function HeroSection() {
         <div className="container">
           <h1 className="hero__heading">
             <span>Hello, This is</span>
-            <span className="hero__name">Ayan Khan</span>
+            <span className="hero__name">Padmanaban</span>
           </h1>
           <div className="hero__img">
             <img src={HeroImg} alt="" />
           </div>
           <div className="hero__info">
             <PText>
-              I am working as a freelance web designer and developer for 4
-              years. I love to design and make new web experiences for the
-              people.
+              I am software engineering graduate. I am passionate about solving
+              real-world problems with technology.
             </PText>
             <Button btnText="see my works" btnLink="/projects" />
           </div>
@@ -176,7 +175,7 @@ export default function HeroSection() {
               <ul>
                 <li>
                   <a
-                    href="http://facebook.com/webcifar"
+                    href="http://facebook.com/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -185,7 +184,7 @@ export default function HeroSection() {
                 </li>
                 <li>
                   <a
-                    href="http://twitter.com/webcifar"
+                    href="http://twitter.com/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -194,20 +193,11 @@ export default function HeroSection() {
                 </li>
                 <li>
                   <a
-                    href="http://isntagram.com/web_cifar"
+                    href="http://isntagram.com/"
                     target="_blank"
                     rel="noreferrer"
                   >
                     IG
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="http://webcifar.com"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    LI
                   </a>
                 </li>
               </ul>
